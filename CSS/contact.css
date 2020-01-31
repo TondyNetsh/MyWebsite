@@ -1,0 +1,105 @@
+body{
+	background-color: darkgoldenrod;
+}
+/*Grid view for all the div's*/
+.header{
+	grid-area: header;
+	margin-top: -30px;
+}
+.content{
+	grid-area: content;
+	margin-left: auto;
+	margin-right: auto;
+}
+.menu{
+	grid-area: menu;
+	background-color: cadetblue;
+	margin-top: -30px;
+}
+.footer{
+	grid-area: footer;
+	background-color: darkcyan;
+}
+.container{
+	display: grid;
+	grid-template-areas: 
+	'menu header header header'
+	'menu content content content'
+	'menu content content content'
+	'menu footer footer footer';
+	grid-gap: 10px;
+	padding: 10px;
+}
+.container > div{
+	/*background-image: url('Images/Nature8.jpg');*/
+	text-align: center;
+	padding: 20px 0;
+}
+.logo{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+marquee{
+	margin-top: -30px;
+	padding-top: -15px;
+	color: darkgoldenrod;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+	padding-top: 20px;
+	background-image: url('Images/innovacion-tecnologia-digital-BBVA.jpg');
+}
+li{
+    display: block;
+    padding: 4px;
+    margin-bottom: 5px;
+    background-color: #FFFFFF;
+    color: #ffffff;    
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+li:hover{
+    background-color: burlywood;
+}
+li a{
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+}
+
+
+footer{
+	margin-bottom: 0px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.social ul {
+    text-align: center;
+}
+.social-icons ul{
+	text-align: center;
+}  
+.social-icons li {
+	display:inline-block;
+	list-style-type:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+}
+.social-icons li a {
+	border-bottom: chartreuse;
+}
+.social-icons li img {
+	width:20px;
+	height:20px;
+	margin-right: 20px;
+}
+.copy{
+    text-align: center;
+}

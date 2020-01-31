@@ -1,0 +1,88 @@
+<html>
+    <head>
+		<title>Contact Us</title>
+        <link rel="stylesheet" href="../styles/index.css" type="text/css">
+        <link rel="stylesheet" href="../styles/form.css" type="text/css">
+        <style>
+            input[type=text], input[type=email], textarea{
+                width: 70%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            input[type=submi],input[type=reset]{
+                background-color: #4CAF50;
+            }
+
+            /* Create two columns that float next to each other */
+            .content{
+                border-radius: 5px;
+                width: 50%;
+                margin-top: 6px;
+                padding: 20px;
+            }
+            /* Clear floats after the columns */
+            .row:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+		<div class="container">
+			<div class="header" style="background-image: url('../Images/post1.png');">
+				<a href="index.html"><img src="../Images/Rotondwa.jpeg" class="logo"></a>
+				<marquee><h1>Welcome To Rotondwa Netshimbupfe Portfolio</h1></marquee>
+			</div>
+			<div class="menu">
+				<ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="cv.html">My CV</a></li>
+                    <li><a href="About.html">About Me</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+			</div>
+                <h2>Contact Us</h2>
+                <p>Swing by for a cup of tea, or leave us a message:</p><br/>
+                <img src="../Images/Tondy.jpg" width="300px" height="500px">
+                <form class="myForm" action="../index.html">                    
+                    <label for="fmame">First Name:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name" ><br/>
+                    <label for="lmame">Last Name:</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your surname"><br/>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address"><br/>
+                    <label for="contact">Contact No:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Your contact number"><br/>
+                    <label for="fmame">Comment:</label><br/>
+                    <textarea cols="20" rows="10" id="comment" name="message" placeholder="Leave us a message"></textarea><br/>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear form"">
+                </form>
+                <script 
+                </div>
+			</div>
+			<div class="footer">
+				<ul class="social-icons">
+                    <li style="color: black;">Find Me On:</li>
+                    <li><a href="https://www.facebook.com/Tondy.Netsh" target="_blank"><img src='../Images/facebook.png' /></a></li>
+                    <li><a href="https://twitter.com/TondieNetsh" target="_blank"><img src='../Images/twitter.png' /></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><img src='../Images/youtube.png' /></a></li>
+                    <li><a href="https://www.instagram.com/rotondwanetsh/" target="_blank"><img src='../Images/instagram.png' /></a></li>
+                    <li><a href="https://www.linkedin.com/in/rotondwa-netshimbupfe-9b8492136/" target="_blank"><img src='../Images/linkedin.png' /></a></li>
+                </ul>
+                <p class="copy">&copy; Designed by Rotondwa Netshimbupfe - All Rights Reserved</p>
+			</div>
+		</div>
+    </body>
+</html>
